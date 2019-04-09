@@ -1,6 +1,4 @@
-import  {
-  GraphQLUnionType,
-} from 'graphql'
+import { GraphQLUnionType } from '../../../src/graphql'
 
 import Comment from '../Comment'
 import Post from '../Post'

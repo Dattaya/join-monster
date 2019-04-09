@@ -1,9 +1,9 @@
 import {
-  GraphQLObjectType,
   GraphQLList,
   GraphQLString,
   GraphQLInt
 } from 'graphql'
+import { GraphQLObjectType } from '../../src/graphql'
 
 import {
   connectionArgs,

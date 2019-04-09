@@ -1,9 +1,9 @@
 import {
-  GraphQLObjectType,
   GraphQLString,
   GraphQLInt,
   GraphQLBoolean
 } from 'graphql'
+import { GraphQLObjectType } from '../../src/graphql'
 
 import {
   globalIdField,
@@ -90,7 +90,7 @@ export const Post = new GraphQLObjectType({
           })
         } else {
           ({
-            sqlJoin: (postTable, commentTable, args) => `${commentTable}.${q('post_id', DB)} = ${postTable}.${q('id', DB)} ${args.active ? `AND ${commentTable}.${q('archived', DB)} = ${bool(false, DB)}` : ''}` 
+            sqlJoin: (postTable, commentTable, args) => `${commentTable}.${q('post_id', DB)} = ${postTable}.${q('id', DB)} ${args.active ? `AND ${commentTable}.${q('archived', DB)} = ${bool(false, DB)}` : ''}`
           })
         }
       }

@@ -1,8 +1,8 @@
 import  {
-  GraphQLInterfaceType,
   GraphQLInt,
   GraphQLString
 } from 'graphql'
+import { GraphQLInterfaceType } from '../../../src/graphql'
 
 import { q } from '../../shared'
 

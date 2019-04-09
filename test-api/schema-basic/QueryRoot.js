@@ -1,10 +1,10 @@
 import {
-  GraphQLObjectType,
   GraphQLList,
   GraphQLString,
   GraphQLInt,
   GraphQLBoolean
 } from 'graphql'
+import { GraphQLObjectType } from '../../src/graphql'
 
 import knex from './database'
 import dbCall from '../data/fetch'

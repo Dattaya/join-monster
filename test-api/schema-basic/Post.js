@@ -1,10 +1,10 @@
 import {
-  GraphQLObjectType,
   GraphQLList,
   GraphQLString,
   GraphQLInt,
   GraphQLBoolean
 } from 'graphql'
+import { GraphQLObjectType } from '../../src/graphql'
 
 import User from './User'
 import Comment from './Comment'

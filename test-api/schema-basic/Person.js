@@ -1,7 +1,7 @@
 import {
-  GraphQLInterfaceType,
   GraphQLString
 } from 'graphql'
+import { GraphQLInterfaceType } from '../../src/graphql'
 
 const Person = new GraphQLInterfaceType({
   name: 'Person',

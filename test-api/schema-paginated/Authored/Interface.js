@@ -1,9 +1,10 @@
 import  {
-  GraphQLInterfaceType,
   GraphQLID,
   GraphQLInt,
   GraphQLString
 } from 'graphql'
+
+import { GraphQLInterfaceType } from '../../../src/graphql'
 
 import { connectionDefinitions } from 'graphql-relay'
 

@@ -1,9 +1,8 @@
 import {
-  GraphQLObjectType,
   GraphQLString,
   GraphQLInt
 } from 'graphql'
-
+import { GraphQLObjectType } from '../../src/graphql'
 
 const Sponsor = new GraphQLObjectType({
   description: 'people who have given money',
@@ -36,5 +35,5 @@ const Sponsor = new GraphQLObjectType({
   })
 })
 
-export default Sponsor 
+export default Sponsor
 

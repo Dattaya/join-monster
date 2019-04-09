@@ -37,7 +37,7 @@ module.exports = {
     'object-curly-newline': 0,
     'max-len': [
       'warn',
-      125,
+      150,
       { ignoreComments: true }
     ],
     'array-bracket-spacing': [

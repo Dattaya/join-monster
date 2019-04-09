@@ -1,11 +1,11 @@
 import {
-  GraphQLObjectType,
   GraphQLNonNull,
   GraphQLList,
   GraphQLString,
   GraphQLInt,
   GraphQLBoolean
 } from 'graphql'
+import { GraphQLObjectType } from '../../src/graphql'
 
 import {
   globalIdField,
