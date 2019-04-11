@@ -1,8 +1,4 @@
-import {
-  GraphQLObjectType as OriginalGraphQLObjectType,
-  GraphQLUnionType as OriginalGraphQLUnionType,
-  GraphQLInterfaceType as OriginalGraphQLInterfaceType
-} from 'graphql'
+import * as graphql from 'graphql'
 import pick from 'lodash/pick'
 
 /**
@@ -14,7 +10,7 @@ import pick from 'lodash/pick'
 
 const keys = [ 'alwaysFetch', 'sqlTable', 'uniqueKey' ]
 
-export class GraphQLObjectType extends OriginalGraphQLObjectType {
+export class GraphQLObjectType extends graphql.GraphQLObjectType {
   constructor(objectTypeConfig) {
     const joinMonsterConfig = pick(objectTypeConfig, keys)
 
@@ -24,7 +20,7 @@ export class GraphQLObjectType extends OriginalGraphQLObjectType {
   }
 }
 
-export class GraphQLUnionType extends OriginalGraphQLUnionType {
+export class GraphQLUnionType extends graphql.GraphQLUnionType {
   constructor(objectTypeConfig) {
     const joinMonsterConfig = pick(objectTypeConfig, keys)
 
@@ -34,8 +30,7 @@ export class GraphQLUnionType extends OriginalGraphQLUnionType {
   }
 }
 
-
-export class GraphQLInterfaceType extends OriginalGraphQLInterfaceType {
+export class GraphQLInterfaceType extends graphql.GraphQLInterfaceType {
   constructor(objectTypeConfig) {
     const joinMonsterConfig = pick(objectTypeConfig, keys)
 
